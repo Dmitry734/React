@@ -140,63 +140,6 @@ export default function Menu() {
 
 
                 <div className="first">
-                    <div>
-                        {inputState !== 'hideFields' && (
-                            <div>
-                                <input
-                                    type="text"
-                                    id="Input1"
-                                    value={inputValue1}
-                                    onChange={handleInputChange}
-                                    disabled={inputState !== 'enable'}
-                                    placeholder="Enter time (HH:MM:SS)"
-                                    pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9]"
-                                />
-
-                            </div>
-                        )}
-                        <br />
-                        <label>
-                            <input
-                                type="radio"
-                                id="radioEnable"
-                                value="enable"
-                                checked={inputState === 'enable'}
-                                onChange={handleRadioChange}
-                            />
-                            Enable Input
-                        </label>
-                        <label>
-                            <input
-                                type="radio"
-                                value="disable"
-                                checked={inputState === 'disable'}
-                                onChange={handleRadioChange}
-                            />
-                            Disable Input
-                        </label>
-                        <label>
-                            <input
-                                type="radio"
-                                value="enableField1"
-                                checked={inputState === 'enableField1'}
-                                onChange={handleRadioChange}
-                            />
-                            Enable Input Field 1
-                        </label>
-                        <label>
-                            <input
-                                type="radio"
-                                value="hideFields"
-                                checked={inputState === 'hideFields'}
-                                onChange={handleRadioChange}
-                            />
-                            Hide Fields
-                        </label>
-                        <br />
-                    </div>
-
-                    <br />
 
 
                     <label>
